@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WASNavigationController.h
 //  WASRecipeDemo
 //
 //  Created by sanking on 15/10/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WASNavigationController : UINavigationController
 
 @end
-

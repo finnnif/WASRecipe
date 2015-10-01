@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		3876680C1BBCC5250033669C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876680B1BBCC5250033669C /* main.m */; };
 		3876680F1BBCC5250033669C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876680E1BBCC5250033669C /* AppDelegate.m */; };
-		387668121BBCC5250033669C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387668111BBCC5250033669C /* ViewController.m */; };
-		387668151BBCC5250033669C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387668131BBCC5250033669C /* Main.storyboard */; };
 		387668171BBCC5250033669C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387668161BBCC5250033669C /* Images.xcassets */; };
-		3876681A1BBCC5250033669C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387668181BBCC5250033669C /* LaunchScreen.xib */; };
 		387668261BBCC5250033669C /* WASRecipeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 387668251BBCC5250033669C /* WASRecipeDemoTests.m */; };
+		38DA054A1BBCE42000921325 /* WASTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA05491BBCE42000921325 /* WASTabBarController.m */; };
+		38DA054D1BBCE57200921325 /* WASTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA054C1BBCE57200921325 /* WASTabBar.m */; };
+		38DA05531BBCE68000921325 /* UIButton+WASExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA05501BBCE68000921325 /* UIButton+WASExtension.m */; };
+		38DA05541BBCE68000921325 /* UIView+WASExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA05521BBCE68000921325 /* UIView+WASExtension.m */; };
+		38DA05581BBCE94400921325 /* WASNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA05571BBCE94400921325 /* WASNavigationController.m */; };
 		44D16C58163CE54F70D7BE78 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8043D6E30CB86D6D3F10E6E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -31,17 +33,24 @@
 		36F499F93B2D348F5C91DF79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		387668061BBCC5250033669C /* WASRecipeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WASRecipeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3876680A1BBCC5250033669C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3876680B1BBCC5250033669C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3876680D1BBCC5250033669C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3876680E1BBCC5250033669C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		387668101BBCC5250033669C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		387668111BBCC5250033669C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		387668141BBCC5250033669C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3876680B1BBCC5250033669C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
+		3876680D1BBCC5250033669C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		3876680E1BBCC5250033669C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		387668161BBCC5250033669C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		387668191BBCC5250033669C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3876681F1BBCC5250033669C /* WASRecipeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WASRecipeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		387668241BBCC5250033669C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		387668251BBCC5250033669C /* WASRecipeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WASRecipeDemoTests.m; sourceTree = "<group>"; };
+		38DA05481BBCE42000921325 /* WASTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASTabBarController.h; sourceTree = "<group>"; };
+		38DA05491BBCE42000921325 /* WASTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASTabBarController.m; sourceTree = "<group>"; };
+		38DA054B1BBCE57200921325 /* WASTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASTabBar.h; sourceTree = "<group>"; };
+		38DA054C1BBCE57200921325 /* WASTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASTabBar.m; sourceTree = "<group>"; };
+		38DA054F1BBCE68000921325 /* UIButton+WASExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WASExtension.h"; sourceTree = "<group>"; };
+		38DA05501BBCE68000921325 /* UIButton+WASExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WASExtension.m"; sourceTree = "<group>"; };
+		38DA05511BBCE68000921325 /* UIView+WASExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WASExtension.h"; sourceTree = "<group>"; };
+		38DA05521BBCE68000921325 /* UIView+WASExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WASExtension.m"; sourceTree = "<group>"; };
+		38DA05551BBCE6AA00921325 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		38DA05561BBCE94400921325 /* WASNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASNavigationController.h; sourceTree = "<group>"; };
+		38DA05571BBCE94400921325 /* WASNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASNavigationController.m; sourceTree = "<group>"; };
 		B8043D6E30CB86D6D3F10E6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7787ACF97884C29B526C3F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,10 +97,7 @@
 		387668081BBCC5250033669C /* WASRecipeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				387668101BBCC5250033669C /* ViewController.h */,
-				387668111BBCC5250033669C /* ViewController.m */,
-				387668131BBCC5250033669C /* Main.storyboard */,
-				387668181BBCC5250033669C /* LaunchScreen.xib */,
+				38DA05361BBCE2EA00921325 /* Classes */,
 				387668091BBCC5250033669C /* Supporting Files */,
 			);
 			path = WASRecipeDemo;
@@ -100,11 +106,8 @@
 		387668091BBCC5250033669C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3876680D1BBCC5250033669C /* AppDelegate.h */,
-				3876680E1BBCC5250033669C /* AppDelegate.m */,
 				387668161BBCC5250033669C /* Images.xcassets */,
 				3876680A1BBCC5250033669C /* Info.plist */,
-				3876680B1BBCC5250033669C /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -124,6 +127,171 @@
 				387668241BBCC5250033669C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38DA05361BBCE2EA00921325 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				38DA053B1BBCE2EA00921325 /* homePage */,
+				38DA053F1BBCE2EA00921325 /* Makert */,
+				38DA05371BBCE2EA00921325 /* Community */,
+				38DA05471BBCE2EA00921325 /* Self */,
+				38DA05431BBCE2EA00921325 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		38DA05371BBCE2EA00921325 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				38DA05381BBCE2EA00921325 /* Controller */,
+				38DA05391BBCE2EA00921325 /* Model */,
+				38DA053A1BBCE2EA00921325 /* View */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		38DA05381BBCE2EA00921325 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		38DA05391BBCE2EA00921325 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38DA053A1BBCE2EA00921325 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38DA053B1BBCE2EA00921325 /* homePage */ = {
+			isa = PBXGroup;
+			children = (
+				38DA053C1BBCE2EA00921325 /* Controller */,
+				38DA053D1BBCE2EA00921325 /* Model */,
+				38DA053E1BBCE2EA00921325 /* View */,
+			);
+			path = homePage;
+			sourceTree = "<group>";
+		};
+		38DA053C1BBCE2EA00921325 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		38DA053D1BBCE2EA00921325 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38DA053E1BBCE2EA00921325 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38DA053F1BBCE2EA00921325 /* Makert */ = {
+			isa = PBXGroup;
+			children = (
+				38DA05401BBCE2EA00921325 /* Controller */,
+				38DA05411BBCE2EA00921325 /* Model */,
+				38DA05421BBCE2EA00921325 /* View */,
+			);
+			path = Makert;
+			sourceTree = "<group>";
+		};
+		38DA05401BBCE2EA00921325 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		38DA05411BBCE2EA00921325 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38DA05421BBCE2EA00921325 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38DA05431BBCE2EA00921325 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				38DA05441BBCE2EA00921325 /* Controller */,
+				38DA05451BBCE2EA00921325 /* Model */,
+				38DA05461BBCE2EA00921325 /* View */,
+				38DA054E1BBCE60D00921325 /* Category */,
+				3876680D1BBCC5250033669C /* AppDelegate.h */,
+				3876680E1BBCC5250033669C /* AppDelegate.m */,
+				38DA05551BBCE6AA00921325 /* PrefixHeader.pch */,
+				3876680B1BBCC5250033669C /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		38DA05441BBCE2EA00921325 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38DA05481BBCE42000921325 /* WASTabBarController.h */,
+				38DA05491BBCE42000921325 /* WASTabBarController.m */,
+				38DA05561BBCE94400921325 /* WASNavigationController.h */,
+				38DA05571BBCE94400921325 /* WASNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		38DA05451BBCE2EA00921325 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38DA05461BBCE2EA00921325 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38DA054B1BBCE57200921325 /* WASTabBar.h */,
+				38DA054C1BBCE57200921325 /* WASTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38DA05471BBCE2EA00921325 /* Self */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Self;
+			sourceTree = "<group>";
+		};
+		38DA054E1BBCE60D00921325 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				38DA054F1BBCE68000921325 /* UIButton+WASExtension.h */,
+				38DA05501BBCE68000921325 /* UIButton+WASExtension.m */,
+				38DA05511BBCE68000921325 /* UIView+WASExtension.h */,
+				38DA05521BBCE68000921325 /* UIView+WASExtension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		4D28B7F9EA0D8F1E0CB7FC46 /* Pods */ = {
@@ -189,6 +357,7 @@
 		387667FE1BBCC5240033669C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WAS;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = sanking;
 				TargetAttributes = {
@@ -225,8 +394,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387668151BBCC5250033669C /* Main.storyboard in Resources */,
-				3876681A1BBCC5250033669C /* LaunchScreen.xib in Resources */,
 				387668171BBCC5250033669C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,9 +445,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387668121BBCC5250033669C /* ViewController.m in Sources */,
 				3876680F1BBCC5250033669C /* AppDelegate.m in Sources */,
+				38DA054D1BBCE57200921325 /* WASTabBar.m in Sources */,
+				38DA05541BBCE68000921325 /* UIView+WASExtension.m in Sources */,
 				3876680C1BBCC5250033669C /* main.m in Sources */,
+				38DA05581BBCE94400921325 /* WASNavigationController.m in Sources */,
+				38DA05531BBCE68000921325 /* UIButton+WASExtension.m in Sources */,
+				38DA054A1BBCE42000921325 /* WASTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,25 +472,6 @@
 			targetProxy = 387668201BBCC5250033669C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		387668131BBCC5250033669C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				387668141BBCC5250033669C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		387668181BBCC5250033669C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				387668191BBCC5250033669C /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		387668271BBCC5250033669C /* Debug */ = {
@@ -407,6 +559,8 @@
 			baseConfigurationReference = DE7787ACF97884C29B526C3F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = WASRecipeDemo/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = WASRecipeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +572,8 @@
 			baseConfigurationReference = 36F499F93B2D348F5C91DF79 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = WASRecipeDemo/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = WASRecipeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
