@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WASTabBar : UITabBar
+@class WASTabBar;
+
+@protocol WASTabBarDelgate <NSObject>
+
+@optional
+- (void)tabBar:(WASTabBar *)tabBar didClickButtonOfIndex:(NSInteger)index;
+
+@end
+
+@interface WASTabBar : UIView
+
+/** UITabBarItem模型数组 */
+@property (nonatomic, strong) NSArray *items;
+
+/** delgate */
+@property (nonatomic, weak) id<WASTabBarDelgate> delgate;
 
 @end

@@ -10,7 +10,7 @@
 
 @interface UIButton (WASExtension)
 
-// 创建一个带图片的button
+/** 根据图片名创建一个带图片的button(普通和高亮) */
 + (instancetype)buttonWithImage:(NSString *)image highImage:(NSString *)highImage target:(id)target action:(SEL)action;
 
 - (instancetype)setImage:(NSString *)image highImage:(NSString *)highImage;

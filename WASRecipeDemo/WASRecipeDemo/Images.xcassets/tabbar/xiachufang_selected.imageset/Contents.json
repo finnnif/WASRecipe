@@ -3,7 +3,7 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "xiachufang_selected.png"
+      "filename" : "xiachu_selected@1x.png"
     },
     {
       "idiom" : "universal",
@@ -12,7 +12,8 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "xiachufang_selected@3x.png"
     }
   ],
   "info" : {

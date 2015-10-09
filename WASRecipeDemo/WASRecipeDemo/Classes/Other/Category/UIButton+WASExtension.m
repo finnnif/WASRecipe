@@ -10,19 +10,21 @@
 
 @implementation UIButton (WASExtension)
 
-+ (instancetype)buttonWithImage:(NSString *)image highImage:(NSString *)highImage target:(id)target action:(SEL)action
++ (instancetype)buttonWithImage:(NSString *)imageName highImage:(NSString *)highImageName target:(id)target action:(SEL)action
 {
-    // 创建item
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
-    [btn setImage:[UIImage imageNamed:highImage] forState:UIControlStateHighlighted];
+    // 创建button
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    // 设置图片
+    [button setImage:imageName highImage:highImageName];
+    
     // 设置按钮尺寸
-    [btn sizeToFit];
+    [button sizeToFit];
     
     // 添加点击事件
-    [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     
-    return btn;
+    return button;
 }
 
 - (instancetype)setImage:(NSString *)image highImage:(NSString *)highImage

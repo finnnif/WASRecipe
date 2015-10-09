@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		384EB00A1BC7757A006E537A /* WASHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384EB0091BC7757A006E537A /* WASHomePageController.m */; };
+		384EB00D1BC79BC2006E537A /* WASMakertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384EB00C1BC79BC2006E537A /* WASMakertController.m */; };
+		384EB0101BC79C05006E537A /* WASCommunityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384EB00F1BC79C05006E537A /* WASCommunityController.m */; };
+		384EB01A1BC79C6D006E537A /* WASSelfController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384EB0191BC79C6D006E537A /* WASSelfController.m */; };
 		3876680C1BBCC5250033669C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876680B1BBCC5250033669C /* main.m */; };
 		3876680F1BBCC5250033669C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876680E1BBCC5250033669C /* AppDelegate.m */; };
 		387668171BBCC5250033669C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387668161BBCC5250033669C /* Images.xcassets */; };
@@ -16,6 +20,7 @@
 		38DA05531BBCE68000921325 /* UIButton+WASExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA05501BBCE68000921325 /* UIButton+WASExtension.m */; };
 		38DA05541BBCE68000921325 /* UIView+WASExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA05521BBCE68000921325 /* UIView+WASExtension.m */; };
 		38DA05581BBCE94400921325 /* WASNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA05571BBCE94400921325 /* WASNavigationController.m */; };
+		38EF2DC31BC6851800A67848 /* WASTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EF2DC21BC6851800A67848 /* WASTabBarButton.m */; };
 		44D16C58163CE54F70D7BE78 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8043D6E30CB86D6D3F10E6E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +36,14 @@
 
 /* Begin PBXFileReference section */
 		36F499F93B2D348F5C91DF79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		384EB0081BC7757A006E537A /* WASHomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASHomePageController.h; sourceTree = "<group>"; };
+		384EB0091BC7757A006E537A /* WASHomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASHomePageController.m; sourceTree = "<group>"; };
+		384EB00B1BC79BC2006E537A /* WASMakertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASMakertController.h; sourceTree = "<group>"; };
+		384EB00C1BC79BC2006E537A /* WASMakertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASMakertController.m; sourceTree = "<group>"; };
+		384EB00E1BC79C05006E537A /* WASCommunityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASCommunityController.h; sourceTree = "<group>"; };
+		384EB00F1BC79C05006E537A /* WASCommunityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASCommunityController.m; sourceTree = "<group>"; };
+		384EB0181BC79C6D006E537A /* WASSelfController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WASSelfController.h; path = ../../../../../../../Documents/WASSelfController.h; sourceTree = "<group>"; };
+		384EB0191BC79C6D006E537A /* WASSelfController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WASSelfController.m; path = ../../../../../../../Documents/WASSelfController.m; sourceTree = "<group>"; };
 		387668061BBCC5250033669C /* WASRecipeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WASRecipeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3876680A1BBCC5250033669C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3876680B1BBCC5250033669C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
@@ -51,6 +64,8 @@
 		38DA05551BBCE6AA00921325 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		38DA05561BBCE94400921325 /* WASNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASNavigationController.h; sourceTree = "<group>"; };
 		38DA05571BBCE94400921325 /* WASNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASNavigationController.m; sourceTree = "<group>"; };
+		38EF2DC11BC6851800A67848 /* WASTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASTabBarButton.h; sourceTree = "<group>"; };
+		38EF2DC21BC6851800A67848 /* WASTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASTabBarButton.m; sourceTree = "<group>"; };
 		B8043D6E30CB86D6D3F10E6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7787ACF97884C29B526C3F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +89,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		384EB0111BC79C32006E537A /* Self */ = {
+			isa = PBXGroup;
+			children = (
+				384EB0121BC79C32006E537A /* Controller */,
+				384EB0151BC79C32006E537A /* Model */,
+				384EB0161BC79C32006E537A /* View */,
+			);
+			path = Self;
+			sourceTree = "<group>";
+		};
+		384EB0121BC79C32006E537A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				384EB0181BC79C6D006E537A /* WASSelfController.h */,
+				384EB0191BC79C6D006E537A /* WASSelfController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		384EB0151BC79C32006E537A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		384EB0161BC79C32006E537A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		387667FD1BBCC5240033669C = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +183,7 @@
 				38DA053B1BBCE2EA00921325 /* homePage */,
 				38DA053F1BBCE2EA00921325 /* Makert */,
 				38DA05371BBCE2EA00921325 /* Community */,
-				38DA05471BBCE2EA00921325 /* Self */,
+				384EB0111BC79C32006E537A /* Self */,
 				38DA05431BBCE2EA00921325 /* Other */,
 			);
 			path = Classes;
@@ -154,6 +202,8 @@
 		38DA05381BBCE2EA00921325 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				384EB00E1BC79C05006E537A /* WASCommunityController.h */,
+				384EB00F1BC79C05006E537A /* WASCommunityController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +235,8 @@
 		38DA053C1BBCE2EA00921325 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				384EB0081BC7757A006E537A /* WASHomePageController.h */,
+				384EB0091BC7757A006E537A /* WASHomePageController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +268,8 @@
 		38DA05401BBCE2EA00921325 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				384EB00B1BC79BC2006E537A /* WASMakertController.h */,
+				384EB00C1BC79BC2006E537A /* WASMakertController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,15 +326,10 @@
 			children = (
 				38DA054B1BBCE57200921325 /* WASTabBar.h */,
 				38DA054C1BBCE57200921325 /* WASTabBar.m */,
+				38EF2DC11BC6851800A67848 /* WASTabBarButton.h */,
+				38EF2DC21BC6851800A67848 /* WASTabBarButton.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		38DA05471BBCE2EA00921325 /* Self */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Self;
 			sourceTree = "<group>";
 		};
 		38DA054E1BBCE60D00921325 /* Category */ = {
@@ -448,10 +497,15 @@
 				3876680F1BBCC5250033669C /* AppDelegate.m in Sources */,
 				38DA054D1BBCE57200921325 /* WASTabBar.m in Sources */,
 				38DA05541BBCE68000921325 /* UIView+WASExtension.m in Sources */,
+				384EB01A1BC79C6D006E537A /* WASSelfController.m in Sources */,
 				3876680C1BBCC5250033669C /* main.m in Sources */,
 				38DA05581BBCE94400921325 /* WASNavigationController.m in Sources */,
+				384EB0101BC79C05006E537A /* WASCommunityController.m in Sources */,
 				38DA05531BBCE68000921325 /* UIButton+WASExtension.m in Sources */,
 				38DA054A1BBCE42000921325 /* WASTabBarController.m in Sources */,
+				384EB00D1BC79BC2006E537A /* WASMakertController.m in Sources */,
+				384EB00A1BC7757A006E537A /* WASHomePageController.m in Sources */,
+				38EF2DC31BC6851800A67848 /* WASTabBarButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

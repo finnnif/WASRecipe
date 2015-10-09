@@ -17,23 +17,22 @@
 #import "UIView+WASExtension.h"
 
 // RGB颜色
-#define WSRGBColor(r, g, b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1.0]
-#define WSARGBColor(r, g, b, a) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:(a) / 1.0]
+#define WASRGBColor(r, g, b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1.0]
+#define WASARGBColor(r, g, b, a) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:(a) / 1.0]
 
 // 随机颜色
-#define WSRandomColor WSARGBColor((arc4random_uniform(255)), (arc4random_uniform(255)), (arc4random_uniform(255)), (arc4random_uniform(10) / 10.0))
+#define WASRandomColor WASARGBColor((arc4random_uniform(255)), (arc4random_uniform(255)), (arc4random_uniform(255)), (arc4random_uniform(10) / 10.0))
 
-#define WSGrayColor(v) WSRGBColor((v), (v), (v))
-#define WSCommonBgColor WSGrayColor(215)
+#define WASGrayColor(v) WASRGBColor((v), (v), (v))
+#define WASCommonBgColor WSGrayColor(215)
 
 // 自定义日志输出
 #ifdef DEBUG // 开发阶段
-#define WSLog(...) NSLog(__VA_ARGS__)
+#define WASLog(...) NSLog(__VA_ARGS__)
 
 #else // 发布阶段
-#define WSLog(...)
+#define WASLog(...)
 #endif
-
 
 
 #endif
