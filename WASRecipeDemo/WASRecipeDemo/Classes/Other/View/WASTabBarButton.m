@@ -18,8 +18,9 @@
         
         self.titleLabel.font = [UIFont systemFontOfSize:11];
         
-        [self setTitleColor:WASGrayColor(154) forState:UIControlStateNormal];
-        [self setTitleColor:WASRGBColor(230, 110, 82) forState:UIControlStateSelected];
+        [self setTitleColor:WASCommonGrayColor forState:UIControlStateNormal];
+        
+        [self setTitleColor:WASCommonRedColor forState:UIControlStateSelected];
     }
     return self;
 }
@@ -29,9 +30,9 @@
     [super layoutSubviews];
     
     // 调整图片
-    self.imageView.height = 25;
-    self.imageView.width = 25;
-    self.imageView.y = 5;
+    self.imageView.height = WASTabBarItemImageHeight;
+    self.imageView.width = self.imageView.height;
+    self.imageView.y = WASCommonSmallMargin;
     self.imageView.centerX = self.width * 0.5;
     
     // 调整文字

@@ -115,9 +115,4 @@
     [self addChildViewController:nv];
 }
 
-#pragma mark 系统UITabBarButton点击触发事件
--(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
-    NSLog(@"%ld", self.selectedIndex);
-}
-
 @end

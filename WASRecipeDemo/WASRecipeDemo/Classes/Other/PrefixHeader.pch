@@ -13,8 +13,10 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 // 头文件
+#import "WASConst.h"
 #import "UIButton+WASExtension.h"
 #import "UIView+WASExtension.h"
+#import "UIBarButtonItem+WASExtension.h"
 
 // RGB颜色
 #define WASRGBColor(r, g, b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1.0]
@@ -24,7 +26,12 @@
 #define WASRandomColor WASARGBColor((arc4random_uniform(255)), (arc4random_uniform(255)), (arc4random_uniform(255)), (arc4random_uniform(10) / 10.0))
 
 #define WASGrayColor(v) WASRGBColor((v), (v), (v))
-#define WASCommonBgColor WSGrayColor(215)
+
+/** 公共灰色 */
+#define WASCommonGrayColor WASGrayColor(154)
+
+/** 公共红色 */
+#define WASCommonRedColor WASRGBColor(230, 110, 82)
 
 // 自定义日志输出
 #ifdef DEBUG // 开发阶段

@@ -16,12 +16,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupNav];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+// 设置导航栏
+- (void)setupNav
+{
+    // 设置tabBar标题栏
+    
+    // 设置左边的item
+    UIBarButtonItem *buyListItem = [UIBarButtonItem itemWithImage:@"buy_list_button" highImage:nil target:self action:@selector(buyListItemOnCilck)];
+    
+    self.navigationItem.rightBarButtonItem = buyListItem;
 }
+
+// 点击标签按钮
+- (void)buyListItemOnCilck
+{
+    UIViewController *tc = [[UIViewController alloc] init];
+    tc.view.backgroundColor = [UIColor blueColor];
+    // push到目标控制器
+    [self.navigationController pushViewController:tc animated:YES];
+}
+
 
 #pragma mark - Table view data source
 

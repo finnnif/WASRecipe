@@ -8,6 +8,7 @@
 
 #import "WASTabBar.h"
 #import "WASTabBarButton.h"
+#import "WASLoginRegisterController.h"
 
 //自定义TabBar的实现
 @interface WASTabBar()
@@ -25,12 +26,12 @@
     
     for (UITabBarItem *item in items) {
 
-        WASTabBarButton *button = [[WASTabBarButton alloc] init];
-        
+        WASTabBarButton *button = [WASTabBarButton buttonWithType:UIButtonTypeCustom];
         [button setImage:item.image forState:UIControlStateNormal];
         [button setImage:item.selectedImage forState:UIControlStateSelected];
         
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
+        
         
         button.tag = self.subviews.count;
         
@@ -45,6 +46,15 @@
 
 - (void)buttonClick:(WASTabBarButton *)button {
     
+    if (button.tag == 3) {
+        
+        // 弹出登陆控制器
+#warning <#message#>
+        [self.window.rootViewController presentViewController:[[WASLoginRegisterController alloc] init] animated:YES completion:^{
+            
+        }];
+        return;
+    }
     // 1.去除以前选中
     _selectedBtn.selected = NO;
     
