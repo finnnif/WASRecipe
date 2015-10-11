@@ -49,15 +49,17 @@
                         <color key="titleColor" red="0.90196078431372551" green="0.43137254901960786" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="cancel" destination="-1" eventType="touchUpInside" id="3nD-mm-LVu"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ak4-ll-8iL" userLabel="登陆按钮">
-                    <rect key="frame" x="158" y="460" width="285" height="40"/>
+                    <rect key="frame" x="20" y="460" width="560" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="ktY-OS-F2O"/>
-                        <constraint firstAttribute="width" constant="285" id="tat-3z-dpZ"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="登陆" backgroundImage="login_btn">
+                    <state key="normal" title="登录" backgroundImage="login_btn">
                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted" backgroundImage="login_btn_click"/>
@@ -67,13 +69,12 @@
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="login" destination="-1" eventType="touchUpInside" id="70n-N0-mx6"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJu-mW-BWh" userLabel="注册按钮">
-                    <rect key="frame" x="158" y="520" width="285" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="285" id="VRA-m1-g8v"/>
-                        <constraint firstAttribute="height" constant="40" id="aP7-2g-PSR"/>
-                    </constraints>
+                    <rect key="frame" x="20" y="520" width="560" height="40"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="手机注册" backgroundImage="register_btn">
                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -85,21 +86,28 @@
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="phoneRegister" destination="-1" eventType="touchUpInside" id="i3M-6H-DnR"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Ak4-ll-8iL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="70l-XP-r1c"/>
                 <constraint firstItem="Ak4-ll-8iL" firstAttribute="leading" secondItem="dJu-mW-BWh" secondAttribute="leading" id="78c-Wy-01X"/>
                 <constraint firstItem="SBd-wx-4bI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Dfp-yY-Lau"/>
                 <constraint firstItem="dJu-mW-BWh" firstAttribute="top" secondItem="Ak4-ll-8iL" secondAttribute="bottom" constant="20" id="Jjj-RB-DfA"/>
                 <constraint firstAttribute="trailing" secondItem="Ils-fP-lEg" secondAttribute="trailing" id="OIQ-GS-cCY"/>
                 <constraint firstAttribute="centerX" secondItem="Ak4-ll-8iL" secondAttribute="centerX" id="QCP-sd-s6t"/>
+                <constraint firstItem="dJu-mW-BWh" firstAttribute="height" secondItem="Ak4-ll-8iL" secondAttribute="height" id="YFd-Yo-VzX"/>
+                <constraint firstAttribute="trailing" secondItem="Ak4-ll-8iL" secondAttribute="trailing" constant="20" id="YcO-Iu-DWv"/>
                 <constraint firstAttribute="bottom" secondItem="dJu-mW-BWh" secondAttribute="bottom" constant="40" id="aBm-5O-jle"/>
                 <constraint firstItem="Ak4-ll-8iL" firstAttribute="top" secondItem="tRY-T2-clc" secondAttribute="bottom" id="mqV-mS-m6E"/>
                 <constraint firstItem="Ils-fP-lEg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="p2k-N1-I3p"/>
                 <constraint firstAttribute="bottom" secondItem="Ils-fP-lEg" secondAttribute="bottom" id="sDO-sa-W29"/>
                 <constraint firstItem="SBd-wx-4bI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="vkB-wb-aAS"/>
                 <constraint firstItem="Ils-fP-lEg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xFa-cC-04N"/>
+                <constraint firstItem="dJu-mW-BWh" firstAttribute="width" secondItem="Ak4-ll-8iL" secondAttribute="width" id="zna-qi-F8A"/>
             </constraints>
         </view>
     </objects>

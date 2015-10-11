@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		384945841BC8C19D00B0D868 /* WASRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384945821BC8C19D00B0D868 /* WASRegisterController.m */; };
+		384945851BC8C19D00B0D868 /* WASRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384945831BC8C19D00B0D868 /* WASRegisterController.xib */; };
+		3849458C1BC8EAA400B0D868 /* WASLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3849458A1BC8EAA400B0D868 /* WASLoginController.m */; };
 		384EB00A1BC7757A006E537A /* WASHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384EB0091BC7757A006E537A /* WASHomePageController.m */; };
 		384EB00D1BC79BC2006E537A /* WASMakertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384EB00C1BC79BC2006E537A /* WASMakertController.m */; };
 		384EB0101BC79C05006E537A /* WASCommunityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384EB00F1BC79C05006E537A /* WASCommunityController.m */; };
@@ -19,6 +22,7 @@
 		389FF8391BC8A15400F77DB2 /* WASLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 389FF8371BC8A15400F77DB2 /* WASLoginRegisterController.xib */; };
 		389FF83C1BC8A2FC00F77DB2 /* WSConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 389FF83B1BC8A2FC00F77DB2 /* WSConst.m */; };
 		389FF83F1BC8A37F00F77DB2 /* WASConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 389FF83E1BC8A37F00F77DB2 /* WASConst.m */; };
+		38AEA23E1BC9F25B0025F05D /* WASLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AEA23D1BC9F25B0025F05D /* WASLoginController.xib */; };
 		38DA054A1BBCE42000921325 /* WASTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA05491BBCE42000921325 /* WASTabBarController.m */; };
 		38DA054D1BBCE57200921325 /* WASTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA054C1BBCE57200921325 /* WASTabBar.m */; };
 		38DA05531BBCE68000921325 /* UIButton+WASExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA05501BBCE68000921325 /* UIButton+WASExtension.m */; };
@@ -41,6 +45,11 @@
 
 /* Begin PBXFileReference section */
 		36F499F93B2D348F5C91DF79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		384945811BC8C19D00B0D868 /* WASRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASRegisterController.h; sourceTree = "<group>"; };
+		384945821BC8C19D00B0D868 /* WASRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASRegisterController.m; sourceTree = "<group>"; };
+		384945831BC8C19D00B0D868 /* WASRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WASRegisterController.xib; sourceTree = "<group>"; };
+		384945891BC8EAA400B0D868 /* WASLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASLoginController.h; sourceTree = "<group>"; };
+		3849458A1BC8EAA400B0D868 /* WASLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASLoginController.m; sourceTree = "<group>"; };
 		384EB0081BC7757A006E537A /* WASHomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASHomePageController.h; sourceTree = "<group>"; };
 		384EB0091BC7757A006E537A /* WASHomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASHomePageController.m; sourceTree = "<group>"; };
 		384EB00B1BC79BC2006E537A /* WASMakertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASMakertController.h; sourceTree = "<group>"; };
@@ -65,6 +74,7 @@
 		389FF83B1BC8A2FC00F77DB2 /* WSConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSConst.m; sourceTree = "<group>"; };
 		389FF83D1BC8A37F00F77DB2 /* WASConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASConst.h; sourceTree = "<group>"; };
 		389FF83E1BC8A37F00F77DB2 /* WASConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASConst.m; sourceTree = "<group>"; };
+		38AEA23D1BC9F25B0025F05D /* WASLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WASLoginController.xib; sourceTree = "<group>"; };
 		38DA05481BBCE42000921325 /* WASTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASTabBarController.h; sourceTree = "<group>"; };
 		38DA05491BBCE42000921325 /* WASTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASTabBarController.m; sourceTree = "<group>"; };
 		38DA054B1BBCE57200921325 /* WASTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASTabBar.h; sourceTree = "<group>"; };
@@ -121,6 +131,12 @@
 				389FF8351BC8A15400F77DB2 /* WASLoginRegisterController.h */,
 				389FF8361BC8A15400F77DB2 /* WASLoginRegisterController.m */,
 				389FF8371BC8A15400F77DB2 /* WASLoginRegisterController.xib */,
+				384945891BC8EAA400B0D868 /* WASLoginController.h */,
+				3849458A1BC8EAA400B0D868 /* WASLoginController.m */,
+				38AEA23D1BC9F25B0025F05D /* WASLoginController.xib */,
+				384945811BC8C19D00B0D868 /* WASRegisterController.h */,
+				384945821BC8C19D00B0D868 /* WASRegisterController.m */,
+				384945831BC8C19D00B0D868 /* WASRegisterController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -467,7 +483,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				389FF8391BC8A15400F77DB2 /* WASLoginRegisterController.xib in Resources */,
+				384945851BC8C19D00B0D868 /* WASRegisterController.xib in Resources */,
 				387668171BBCC5250033669C /* Images.xcassets in Resources */,
+				38AEA23E1BC9F25B0025F05D /* WASLoginController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,8 +540,10 @@
 				3876680F1BBCC5250033669C /* AppDelegate.m in Sources */,
 				38DA054D1BBCE57200921325 /* WASTabBar.m in Sources */,
 				38DA05541BBCE68000921325 /* UIView+WASExtension.m in Sources */,
+				384945841BC8C19D00B0D868 /* WASRegisterController.m in Sources */,
 				3876680C1BBCC5250033669C /* main.m in Sources */,
 				38DA05581BBCE94400921325 /* WASNavigationController.m in Sources */,
+				3849458C1BC8EAA400B0D868 /* WASLoginController.m in Sources */,
 				384EB0101BC79C05006E537A /* WASCommunityController.m in Sources */,
 				389FF83F1BC8A37F00F77DB2 /* WASConst.m in Sources */,
 				38DA05531BBCE68000921325 /* UIButton+WASExtension.m in Sources */,

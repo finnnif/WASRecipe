@@ -7,6 +7,9 @@
 //
 
 #import "WASLoginRegisterController.h"
+#import "WASLoginController.h"
+#import "WASRegisterController.h"
+
 
 @interface WASLoginRegisterController ()
 
@@ -24,14 +27,30 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)login
+{
+    WASNavigationController *nv = [[WASNavigationController alloc] initWithRootViewController:[[WASLoginController alloc] init]];
+    
+    [self presentViewController:nv animated:YES completion:^{
+        
+    } ];
 }
-*/
+
+- (IBAction)phoneRegister
+{
+    WASNavigationController *nv = [[WASNavigationController alloc] initWithRootViewController:[[WASRegisterController alloc] init]];
+    
+    [self presentViewController:nv animated:YES completion:^{
+        
+    } ];
+}
+
+
+- (IBAction)cancel
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
 
 @end

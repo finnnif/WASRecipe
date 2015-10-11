@@ -13,6 +13,7 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 // 头文件
+#import "WASNavigationController.h"
 #import "WASConst.h"
 #import "UIButton+WASExtension.h"
 #import "UIView+WASExtension.h"
@@ -27,11 +28,27 @@
 
 #define WASGrayColor(v) WASRGBColor((v), (v), (v))
 
-/** 公共灰色 */
+// 公共灰色
 #define WASCommonGrayColor WASGrayColor(154)
 
-/** 公共红色 */
+// 公共红色
 #define WASCommonRedColor WASRGBColor(230, 110, 82)
+
+// 公共红色(透明)
+#define WASCommonTranslucentRedColor WASARGBColor(230, 110, 82, 0.2)
+
+// 判断iPhone型号
+// iPhone4/4s
+#define iPhone4Or4s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// iphone5/5s
+#define iPhone5Or5s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// iPhone6
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// iphone6+
+#define iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
 
 // 自定义日志输出
 #ifdef DEBUG // 开发阶段
