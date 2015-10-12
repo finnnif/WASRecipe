@@ -100,7 +100,15 @@
 {
     // 设置导航条
     vc.view.backgroundColor = WASRandomColor;
-    vc.title = title;
+    vc.tabBarItem.title = title;
+    
+    // 设置标题文字
+    UILabel *label = [[UILabel alloc] init];
+    label.text = title;
+    label.font = [UIFont systemFontOfSize:18];
+    [label sizeToFit];
+    label.textColor = WASTextGrayColor;
+    vc.navigationItem.titleView = label;
     
     // 设置按钮图片
     vc.tabBarItem.image = [UIImage imageNamed:image];

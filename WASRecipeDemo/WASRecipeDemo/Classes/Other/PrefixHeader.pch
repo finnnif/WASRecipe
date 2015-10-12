@@ -31,6 +31,9 @@
 // 公共灰色
 #define WASCommonGrayColor WASGrayColor(154)
 
+// 文字灰色
+#define WASTextGrayColor WASRGBColor(70, 70, 60)
+
 // 公共红色
 #define WASCommonRedColor WASRGBColor(230, 110, 82)
 

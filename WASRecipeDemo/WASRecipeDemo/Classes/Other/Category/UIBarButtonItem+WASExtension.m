@@ -8,7 +8,7 @@
 
 #import "UIBarButtonItem+WASExtension.h"
 
-@implementation UIBarButtonItem (XMGExtension)
+@implementation UIBarButtonItem (WASExtension)
 
 + (instancetype)itemWithImage:(NSString *)image highImage:(NSString *)highImage target:(id)target action:(SEL)action
 {
@@ -22,4 +22,25 @@
     
     return [[self alloc] initWithCustomView:button];
 }
+
++ (instancetype)itemWithTitle:(NSString *)title itemEdgeInsets:(UIEdgeInsets)itemEdgeInsets target:(id)target action:(SEL)action
+{
+    UIButton *item = [UIButton buttonWithType:UIButtonTypeCustom];
+    [item setTitle:title forState:UIControlStateNormal];
+    
+    item.titleLabel.font = [UIFont systemFontOfSize:17];
+    [item setTitleColor:WASCommonRedColor forState:UIControlStateNormal];
+    [item setTitleColor:WASCommonTranslucentRedColor forState:UIControlStateHighlighted];
+    [item addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    
+    if (![NSStringFromUIEdgeInsets(itemEdgeInsets) isEqualToString:NSStringFromUIEdgeInsets(UIEdgeInsetsZero)]) {
+        
+        item.contentEdgeInsets = itemEdgeInsets;
+    }
+    
+    [item sizeToFit];
+
+    return [[UIBarButtonItem alloc] initWithCustomView:item];
+}
+
 @end

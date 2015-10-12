@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIBarButtonItem (XMGExtension)
+@interface UIBarButtonItem (WASExtension)
 
+/** 按照图片创建UIBarButtonItem */
 + (instancetype)itemWithImage:(NSString *)image highImage:(NSString *)highImage target:(id)target action:(SEL)action;
+
+/** 按照文字创建UIBarButtonItem(可修改偏移) */
++ (instancetype)itemWithTitle:(NSString *)title itemEdgeInsets:(UIEdgeInsets)itemEdgeInsets target:(id)target action:(SEL)action;
 
 @end

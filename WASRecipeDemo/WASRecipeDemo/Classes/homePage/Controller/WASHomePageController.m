@@ -7,6 +7,7 @@
 //
 
 #import "WASHomePageController.h"
+#import "WASShoppingBasketController.h"
 
 @interface WASHomePageController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.tableView.delegate = self;
+//    self.tableView.dataSource = self;
+    
+    [self.tableView registerClass:[UITableViewCell class]forCellReuseIdentifier:@"123"];
     
     [self setupNav];
 }
@@ -23,20 +28,17 @@
 // 设置导航栏
 - (void)setupNav
 {
-    // 设置tabBar标题栏
-    
     // 设置左边的item
     UIBarButtonItem *buyListItem = [UIBarButtonItem itemWithImage:@"buy_list_button" highImage:nil target:self action:@selector(buyListItemOnCilck)];
-    
     self.navigationItem.rightBarButtonItem = buyListItem;
+
 }
 
 // 点击标签按钮
 - (void)buyListItemOnCilck
 {
-    UIViewController *tc = [[UIViewController alloc] init];
-    tc.view.backgroundColor = [UIColor blueColor];
-    // push到目标控制器
+    WASShoppingBasketController *tc = [[WASShoppingBasketController alloc] init];
+
     [self.navigationController pushViewController:tc animated:YES];
 }
 
@@ -44,26 +46,23 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    // Return the number of sections.
-    return 0;
+    
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return 0;
+    return 10;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"123"];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -32,19 +32,15 @@
 // 设置导航条
 - (void)setupNav
 {
-    self.title = @"手机注册";
+    // 设置标题文字
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"手机注册";
+    label.font = [UIFont systemFontOfSize:18];
+    [label sizeToFit];
+    label.textColor = WASTextGrayColor;
+    self.navigationItem.titleView = label;
     
-    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftButton setTitle:@"取消" forState:UIControlStateNormal];
-    
-    leftButton.titleLabel.font = [UIFont systemFontOfSize:17];
-    [leftButton setTitleColor:WASCommonRedColor forState:UIControlStateNormal];
-    [leftButton setTitleColor:WASCommonTranslucentRedColor forState:UIControlStateHighlighted];
-    [leftButton addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchUpInside];
-    [leftButton sizeToFit];
-    leftButton.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTitle:@"取消" itemEdgeInsets:UIEdgeInsetsMake(0, -7, 0, 0) target:self action:@selector(cancel)];
 }
 
 - (void)cancel
