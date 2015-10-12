@@ -16,3 +16,6 @@ UIKIT_EXTERN CGFloat const WASCommonSmallMargin;
 
 /** tabBar上按钮图片的边长 */
 UIKIT_EXTERN CGFloat const WASTabBarItemImageHeight;
+
+/** 请求路径 */
+UIKIT_EXTERN NSString * const WASRequestURL;

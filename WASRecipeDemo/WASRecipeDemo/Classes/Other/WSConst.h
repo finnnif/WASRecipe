@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /** 请求路径 */
-UIKIT_EXTERN NSString * const WSRequestURL;
+UIKIT_EXTERN NSString * const WASRequestURL;
 
 /** 统一的间距 */
 UIKIT_EXTERN CGFloat const WSCommonMargin;

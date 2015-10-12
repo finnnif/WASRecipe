@@ -34,7 +34,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor lightGrayColor];
     
     [self setupChildViewController];
     
@@ -99,7 +98,7 @@
 - (void)loadChildContorller:(UIViewController *)vc image:(NSString *)image selImage:(NSString *)selImage title:(NSString *)title
 {
     // 设置导航条
-    vc.view.backgroundColor = WASRandomColor;
+//    vc.view.backgroundColor = WASRandomColor;
     vc.tabBarItem.title = title;
     
     // 设置标题文字

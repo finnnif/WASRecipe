@@ -40,7 +40,7 @@
 // 公共红色(透明)
 #define WASCommonTranslucentRedColor WASARGBColor(230, 110, 82, 0.2)
 
-// 判断iPhone型号
+#pragma mark - 判断iPhone型号
 // iPhone4/4s
 #define iPhone4Or4s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
 
@@ -52,6 +52,12 @@
 
 // iphone6+
 #define iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// 将数据写到桌面的plist
+#define WSWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"/Users/sanking/Desktop/%@.plist", filename] atomically:YES];
+
+// 弱引用
+#define WASWeakSelf __weak typeof(self) weakSelf = self;
 
 // 自定义日志输出
 #ifdef DEBUG // 开发阶段

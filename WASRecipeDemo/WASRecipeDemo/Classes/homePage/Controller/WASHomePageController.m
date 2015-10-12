@@ -7,22 +7,98 @@
 //
 
 #import "WASHomePageController.h"
+#import <AFNetworking.h>
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
+#import "WASPopList.h"
 #import "WASShoppingBasketController.h"
+#import "WASListItemCell.h"
 
 @interface WASHomePageController ()
+
+/** AFN管理者 */
+@property (nonatomic, weak) AFHTTPSessionManager *manager;
+
+/** 菜单模型数组 */
+@property (nonatomic, strong) NSArray *listItems;
 
 @end
 
 @implementation WASHomePageController
 
+// 重用标识
+NSString * const WASListId = @"listItem";
+
+#pragma mark - lazy
+- (AFHTTPSessionManager *)manager
+{
+    if (!_manager) {
+        _manager = [AFHTTPSessionManager manager];
+    }
+    return _manager;
+}
+
+//- (NSArray *)listItems
+//{
+//    if (!_listItems) {
+//        
+//        _listItems = [WASListItem objectArrayWithKeyValuesArray:[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"lists" ofType:@"plist"]]];
+//    }
+//    return _listItems;
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.tableView.delegate = self;
-//    self.tableView.dataSource = self;
     
-    [self.tableView registerClass:[UITableViewCell class]forCellReuseIdentifier:@"123"];
     
+    [self loadHomeData];
+//    NSLog(@"%@", NSHomeDirectory());
+    [self setupTableView];
+
     [self setupNav];
+
+}
+
+- (void)loadHomeData
+{
+    // 取消之前的所有请求
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
+    // 请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"timezone"] = @"Asia/Shanghai";
+    params[@"api_key"] = @"0f9f79be1dac5f003e7de6f876b17c00";
+    params[@"api_sign"] = @"c6a8015431d56f800c519dfa5c610fcd";
+    params[@"version"] = @"4.4.0";
+    params[@"origin"] = @"iphone";
+    
+    WASWeakSelf;
+    // 发送请求
+    [self.manager GET:WASRequestURL parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+        WSWriteToPlist(responseObject[@"content"], @"首页数据.plist");
+        weakSelf.listItems = [WASPopList objectArrayWithKeyValuesArray:responseObject[@"content"][@"pop_lists"][@"lists"]];
+        // 刷新表格
+        [weakSelf.tableView reloadData];
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"没有网络啊,亲~~~~~");
+    }];
+}
+
+- (void)setupTableView
+{
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WASListItemCell class]) bundle:nil] forCellReuseIdentifier:WASListId];
+    
+    self.tableView.rowHeight = 100;
+    
+    
+//    self.tableView.estimatedRowHeight = 100;
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    self.tableView.backgroundColor = [UIColor clearColor];
+    [self.tableView reloadData];
 }
 
 // 设置导航栏
@@ -45,67 +121,27 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    return 2;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    // Return the number of rows in the section.
-    return 10;
+    return self.listItems.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"123"];
     
+    WASListItemCell *cell = [tableView dequeueReusableCellWithIdentifier:WASListId];
+//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.listItem = self.listItems[indexPath.row];
+    
+//    WASLog(@"%@", cell);
     return cell;
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+#pragma mark - Table view delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

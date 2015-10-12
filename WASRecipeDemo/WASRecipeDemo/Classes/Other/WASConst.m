@@ -16,3 +16,6 @@ CGFloat const WASCommonSmallMargin = 5;
 
 /** tabBar上按钮图片的边长 */
 CGFloat const WASTabBarItemImageHeight = 25;
+
+/** 请求路径 */
+NSString * const WASRequestURL = @"http://api.xiachufang.com/v2/init_page_v4.json";

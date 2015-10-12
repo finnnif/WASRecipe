@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38057C3C1BCBD729001A8784 /* WASUer.m in Sources */ = {isa = PBXBuildFile; fileRef = 38057C3B1BCBD729001A8784 /* WASUer.m */; };
+		38057C3F1BCBD7ED001A8784 /* WASRecipeList.m in Sources */ = {isa = PBXBuildFile; fileRef = 38057C3E1BCBD7ED001A8784 /* WASRecipeList.m */; };
 		384945841BC8C19D00B0D868 /* WASRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384945821BC8C19D00B0D868 /* WASRegisterController.m */; };
 		384945851BC8C19D00B0D868 /* WASRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384945831BC8C19D00B0D868 /* WASRegisterController.xib */; };
 		3849458C1BC8EAA400B0D868 /* WASLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3849458A1BC8EAA400B0D868 /* WASLoginController.m */; };
@@ -32,6 +34,10 @@
 		38DA05581BBCE94400921325 /* WASNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA05571BBCE94400921325 /* WASNavigationController.m */; };
 		38EF2DC31BC6851800A67848 /* WASTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EF2DC21BC6851800A67848 /* WASTabBarButton.m */; };
 		38F512601BC7D9C300D02B37 /* UIBarButtonItem+WASExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5125F1BC7D9C300D02B37 /* UIBarButtonItem+WASExtension.m */; };
+		38FC167D1BCB7B0C007E4629 /* WASPopList.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FC167C1BCB7B0C007E4629 /* WASPopList.m */; };
+		38FC16811BCB8E65007E4629 /* WASListItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FC167F1BCB8E65007E4629 /* WASListItemCell.m */; };
+		38FC16821BCB8E65007E4629 /* WASListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38FC16801BCB8E65007E4629 /* WASListItemCell.xib */; };
+		38FC16841BCB9708007E4629 /* lists.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38FC16831BCB9708007E4629 /* lists.plist */; };
 		44D16C58163CE54F70D7BE78 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8043D6E30CB86D6D3F10E6E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +53,10 @@
 
 /* Begin PBXFileReference section */
 		36F499F93B2D348F5C91DF79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		38057C3A1BCBD729001A8784 /* WASUer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASUer.h; sourceTree = "<group>"; };
+		38057C3B1BCBD729001A8784 /* WASUer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASUer.m; sourceTree = "<group>"; };
+		38057C3D1BCBD7ED001A8784 /* WASRecipeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASRecipeList.h; sourceTree = "<group>"; };
+		38057C3E1BCBD7ED001A8784 /* WASRecipeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASRecipeList.m; sourceTree = "<group>"; };
 		384945811BC8C19D00B0D868 /* WASRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASRegisterController.h; sourceTree = "<group>"; };
 		384945821BC8C19D00B0D868 /* WASRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASRegisterController.m; sourceTree = "<group>"; };
 		384945831BC8C19D00B0D868 /* WASRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WASRegisterController.xib; sourceTree = "<group>"; };
@@ -95,6 +105,12 @@
 		38EF2DC21BC6851800A67848 /* WASTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASTabBarButton.m; sourceTree = "<group>"; };
 		38F5125E1BC7D9C300D02B37 /* UIBarButtonItem+WASExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WASExtension.h"; sourceTree = "<group>"; };
 		38F5125F1BC7D9C300D02B37 /* UIBarButtonItem+WASExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WASExtension.m"; sourceTree = "<group>"; };
+		38FC167B1BCB7B0C007E4629 /* WASPopList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASPopList.h; sourceTree = "<group>"; };
+		38FC167C1BCB7B0C007E4629 /* WASPopList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASPopList.m; sourceTree = "<group>"; };
+		38FC167E1BCB8E65007E4629 /* WASListItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASListItemCell.h; sourceTree = "<group>"; };
+		38FC167F1BCB8E65007E4629 /* WASListItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASListItemCell.m; sourceTree = "<group>"; };
+		38FC16801BCB8E65007E4629 /* WASListItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WASListItemCell.xib; sourceTree = "<group>"; };
+		38FC16831BCB9708007E4629 /* lists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lists.plist; sourceTree = "<group>"; };
 		B8043D6E30CB86D6D3F10E6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7787ACF97884C29B526C3F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +210,7 @@
 			children = (
 				387668161BBCC5250033669C /* Images.xcassets */,
 				3876680A1BBCC5250033669C /* Info.plist */,
+				38FC16831BCB9708007E4629 /* lists.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -285,6 +302,12 @@
 		38DA053D1BBCE2EA00921325 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				38FC167B1BCB7B0C007E4629 /* WASPopList.h */,
+				38FC167C1BCB7B0C007E4629 /* WASPopList.m */,
+				38057C3D1BCBD7ED001A8784 /* WASRecipeList.h */,
+				38057C3E1BCBD7ED001A8784 /* WASRecipeList.m */,
+				38057C3A1BCBD729001A8784 /* WASUer.h */,
+				38057C3B1BCBD729001A8784 /* WASUer.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +315,9 @@
 		38DA053E1BBCE2EA00921325 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				38FC167E1BCB8E65007E4629 /* WASListItemCell.h */,
+				38FC167F1BCB8E65007E4629 /* WASListItemCell.m */,
+				38FC16801BCB8E65007E4629 /* WASListItemCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -494,6 +520,8 @@
 				384945851BC8C19D00B0D868 /* WASRegisterController.xib in Resources */,
 				38AEA2431BCA0FF30025F05D /* WASShoppingBasketController.xib in Resources */,
 				387668171BBCC5250033669C /* Images.xcassets in Resources */,
+				38FC16821BCB8E65007E4629 /* WASListItemCell.xib in Resources */,
+				38FC16841BCB9708007E4629 /* lists.plist in Resources */,
 				38AEA23E1BC9F25B0025F05D /* WASLoginController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,17 +574,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				389FF8341BC8A0CF00F77DB2 /* WASSelfController.m in Sources */,
+				38FC16811BCB8E65007E4629 /* WASListItemCell.m in Sources */,
 				3876680F1BBCC5250033669C /* AppDelegate.m in Sources */,
 				38AEA2421BCA0FF30025F05D /* WASShoppingBasketController.m in Sources */,
+				38057C3F1BCBD7ED001A8784 /* WASRecipeList.m in Sources */,
 				38DA054D1BBCE57200921325 /* WASTabBar.m in Sources */,
 				38DA05541BBCE68000921325 /* UIView+WASExtension.m in Sources */,
 				384945841BC8C19D00B0D868 /* WASRegisterController.m in Sources */,
+				38FC167D1BCB7B0C007E4629 /* WASPopList.m in Sources */,
 				3876680C1BBCC5250033669C /* main.m in Sources */,
 				38DA05581BBCE94400921325 /* WASNavigationController.m in Sources */,
 				3849458C1BC8EAA400B0D868 /* WASLoginController.m in Sources */,
 				384EB0101BC79C05006E537A /* WASCommunityController.m in Sources */,
 				389FF83F1BC8A37F00F77DB2 /* WASConst.m in Sources */,
 				38DA05531BBCE68000921325 /* UIButton+WASExtension.m in Sources */,
+				38057C3C1BCBD729001A8784 /* WASUer.m in Sources */,
 				389FF8381BC8A15400F77DB2 /* WASLoginRegisterController.m in Sources */,
 				38DA054A1BBCE42000921325 /* WASTabBarController.m in Sources */,
 				384EB00D1BC79BC2006E537A /* WASMakertController.m in Sources */,
