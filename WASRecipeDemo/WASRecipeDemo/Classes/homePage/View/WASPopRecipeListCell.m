@@ -21,13 +21,13 @@
 
 @implementation WASPopRecipeListCell
 
-- (void)setRecipeList:(WASPopRecipeList *)recipeList
+- (void)setPopRecipeListItem:(WASPopRecipeList *)popRecipeListItem
 {
-    _recipeList = recipeList;
+    _popRecipeListItem = popRecipeListItem;
     
-    self.nameLabel.text = recipeList.name;
-    self.uerNameLabel.text = recipeList.author.name;
-    [self.iconView setupRectHeaderFromURL:recipeList.recipePic];
+    self.nameLabel.text = popRecipeListItem.name;
+    self.uerNameLabel.text = popRecipeListItem.author.name;
+    [self.iconView setupRectHeaderFromURL:popRecipeListItem.recipePic];
 }
 
 @end

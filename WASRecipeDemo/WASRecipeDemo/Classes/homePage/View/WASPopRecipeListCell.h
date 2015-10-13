@@ -13,6 +13,6 @@
 @interface WASPopRecipeListCell : UITableViewCell
 
 /** 模型数据 */
-@property (nonatomic, strong) WASPopRecipeList *recipeList;
+@property (nonatomic, strong) WASPopRecipeList *popRecipeListItem;
 
 @end

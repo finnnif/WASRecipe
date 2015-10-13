@@ -22,10 +22,10 @@
 /** AFN管理者 */
 @property (nonatomic, weak) AFHTTPSessionManager *manager;
 
-/** 榜单菜单模型数组 */
-@property (nonatomic, strong) NSArray *listItems;
-
 /** 流行菜单模型数组 */
+@property (nonatomic, strong) NSArray *popRecipeLists;
+
+/** 榜单菜单模型数组 */
 @property (nonatomic, strong) NSArray *popLists;
 
 @end
@@ -33,8 +33,8 @@
 @implementation WASHomePageController
 
 // 重用标识
+NSString * const WASPopRecipeListId = @"popRecipeList";
 NSString * const WASPopListId = @"popList";
-NSString * const WASListItemId = @"listItem";
 
 #pragma mark - lazy
 - (AFHTTPSessionManager *)manager
@@ -84,8 +84,9 @@ NSString * const WASListItemId = @"listItem";
         
         WSWriteToPlist(responseObject[@"content"], @"首页数据.plist");
         
-        weakSelf.listItems = [WASPopList objectArrayWithKeyValuesArray:responseObject[@"content"][@"pop_list"][@"lists"]];
-        weakSelf.popLists = [WASPopRecipeList objectArrayWithKeyValuesArray:responseObject[@"content"][@"pop_recipe_lists"][@"recipe_lists"]];
+        weakSelf.popLists = [WASPopList objectArrayWithKeyValuesArray:responseObject[@"content"][@"pop_lists"][@"lists"]];
+        
+        weakSelf.popRecipeLists = [WASPopRecipeList objectArrayWithKeyValuesArray:responseObject[@"content"][@"pop_recipe_lists"][@"recipe_lists"]];
         
         // 刷新表格
         [weakSelf.tableView reloadData];
@@ -97,9 +98,10 @@ NSString * const WASListItemId = @"listItem";
 
 - (void)setupTableView
 {
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WASPopListCell class]) bundle:nil] forCellReuseIdentifier:WASListItemId];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WASPopRecipeListCell class]) bundle:nil] forCellReuseIdentifier:WASPopRecipeListId];
     
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WASPopList class]) bundle:nil] forCellReuseIdentifier:WASPopListId];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WASPopListCell class]) bundle:nil] forCellReuseIdentifier:WASPopListId];
+    
     
     self.tableView.rowHeight = 80;
     
@@ -107,7 +109,7 @@ NSString * const WASListItemId = @"listItem";
 //    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    self.tableView.backgroundColor = WASCommonBgColor;
+    self.tableView.backgroundColor = WASCommonBgColor;
 }
 
 // 设置导航栏
@@ -138,10 +140,10 @@ NSString * const WASListItemId = @"listItem";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section == 0) {
-        return self.popLists.count;
+        return self.popRecipeLists.count;
     }
     else {
-    return self.listItems.count;
+    return self.popLists.count;
     }
 }
 
@@ -149,21 +151,23 @@ NSString * const WASListItemId = @"listItem";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section == 0) {
-        WASPopListCell *cell = [tableView dequeueReusableCellWithIdentifier:WASListItemId];
+        WASPopRecipeListCell *cell = [tableView dequeueReusableCellWithIdentifier:WASPopRecipeListId];
         
-        cell.listItem = self.listItems[indexPath.row];
+        cell.popRecipeListItem = self.popRecipeLists[indexPath.row];
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = self.tableView.backgroundColor;
+        return cell;
     }
-    WASPopListCell *cell = [tableView dequeueReusableCellWithIdentifier:WASListItemId];
-    
-    cell.listItem = self.listItems[indexPath.row];
-    
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.backgroundColor = WASCommonBgColor;
-    
-    return cell;
+    else {
+        WASPopListCell *cell = [tableView dequeueReusableCellWithIdentifier:WASPopListId];
+        
+        cell.popListItem = self.popLists[indexPath.row];
+        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.backgroundColor = self.tableView.backgroundColor;
+        return cell;
+    }
 }
 
 // 设置组头视图
@@ -175,7 +179,12 @@ NSString * const WASListItemId = @"listItem";
 // 设置组标题
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"榜单";
+    if (section == 0) {
+        return @"流行菜单";
+    }
+    else {
+        return @"榜单";
+    }
 }
 
 

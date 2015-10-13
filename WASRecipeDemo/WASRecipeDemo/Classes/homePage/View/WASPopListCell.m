@@ -21,33 +21,27 @@
 
 @implementation WASPopListCell
 
-- (void)setListItem:(WASPopList *)listItem
+- (void)setPopListItem:(WASPopList *)popListItem
 {
-    _listItem = listItem;
+    _popListItem = popListItem;
     
     self.imageView.clipsToBounds = YES;
     // 设置标题
-    self.nameLabel.text = listItem.display_name;
-    self.descLabel.text = listItem.desc;
+    self.nameLabel.text = popListItem.display_name;
+    self.descLabel.text = popListItem.desc;
     // 设置图片
-    [self.imageView setupRectHeaderFromURL:listItem.pic];
+    [self.imageView setupRectHeaderFromURL:popListItem.pic];
     self.imageView.layer.cornerRadius = 5;
     
 }
 
-//- (void)setFrame:(CGRect)frame
-//{
-//    frame.size.height -= 1;
-//    [super setFrame:frame];
-//}
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
 
-//- (void)layoutSubviews
-//{
-//    [super layoutSubviews];
-//
-//    self.imageView.width = 65;
-//    self.imageView.height = 65;
-//    self.imageView.centerY = self.height * 0.5;
-//}
+    self.imageView.width = 65;
+    self.imageView.height = 65;
+    self.imageView.centerY = self.height * 0.5;
+}
 
 @end
