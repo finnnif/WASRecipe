@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 sanking. All rights reserved.
 //
 
-#import "WASListItemCell.h"
+#import "WASPopListCell.h"
 #import "WASPopList.h"
 #import <UIImageView+WebCache.h>
 
-@interface WASListItemCell ()
+@interface WASPopListCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation WASListItemCell
+@implementation WASPopListCell
 
 - (void)setListItem:(WASPopList *)listItem
 {
@@ -30,18 +30,24 @@
     self.nameLabel.text = listItem.display_name;
     self.descLabel.text = listItem.desc;
     // 设置图片
-#warning 设置成只是内存缓存
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:listItem.pic] placeholderImage:[UIImage imageNamed:@"pudding"]];
+    [self.imageView setupRectHeaderFromURL:listItem.pic];
+    self.imageView.layer.cornerRadius = 5;
     
 }
 
-- (void)layoutSubviews
-{
-    [super layoutSubviews];
+//- (void)setFrame:(CGRect)frame
+//{
+//    frame.size.height -= 1;
+//    [super setFrame:frame];
+//}
 
-    self.imageView.width = 65;
-    self.imageView.height = 65;
-    self.imageView.centerY = self.height * 0.5;
-}
+//- (void)layoutSubviews
+//{
+//    [super layoutSubviews];
+//
+//    self.imageView.width = 65;
+//    self.imageView.height = 65;
+//    self.imageView.centerY = self.height * 0.5;
+//}
 
 @end

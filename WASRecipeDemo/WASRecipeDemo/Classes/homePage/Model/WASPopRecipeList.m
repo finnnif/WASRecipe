@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 sanking. All rights reserved.
 //
 
-#import "WASRecipeList.h"
+#import "WASPopRecipeList.h"
 
-@implementation WASRecipeList
+@implementation WASPopRecipeList
 
 @end

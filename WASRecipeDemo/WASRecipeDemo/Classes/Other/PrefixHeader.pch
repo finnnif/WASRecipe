@@ -18,6 +18,8 @@
 #import "UIButton+WASExtension.h"
 #import "UIView+WASExtension.h"
 #import "UIBarButtonItem+WASExtension.h"
+#import "UIImage+WASExtension.h"
+#import "UIImageView+WASExtension.h"
 
 // RGB颜色
 #define WASRGBColor(r, g, b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1.0]
@@ -30,6 +32,9 @@
 
 // 公共灰色
 #define WASCommonGrayColor WASGrayColor(154)
+
+// 主题背景
+#define WASCommonBgColor WASRGBColor(242, 241, 232)
 
 // 文字灰色
 #define WASTextGrayColor WASRGBColor(70, 70, 60)

@@ -10,7 +10,7 @@
 
 @class WASUer;
 
-@interface WASRecipeList : NSObject
+@interface WASPopRecipeList : NSObject
 
 /** 菜谱名称 */
 @property (nonatomic, copy) NSString *name;
@@ -18,7 +18,7 @@
 /** 用户 */
 @property (nonatomic, strong) WASUer *author;
 
-/** 图片数组 */
-@property (nonatomic, strong) NSArray *pics;
+/** 封面图片url */
+@property (nonatomic, strong) NSString *recipePic;
 
 @end

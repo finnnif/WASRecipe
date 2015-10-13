@@ -10,24 +10,31 @@
 #import <AFNetworking.h>
 #import <MJExtension.h>
 #import <UIImageView+WebCache.h>
-#import "WASPopList.h"
 #import "WASShoppingBasketController.h"
-#import "WASListItemCell.h"
+
+#import "WASPopList.h"
+#import "WASPopRecipeList.h"
+#import "WASPopRecipeListCell.h"
+#import "WASPopListCell.h"
 
 @interface WASHomePageController ()
 
 /** AFN管理者 */
 @property (nonatomic, weak) AFHTTPSessionManager *manager;
 
-/** 菜单模型数组 */
+/** 榜单菜单模型数组 */
 @property (nonatomic, strong) NSArray *listItems;
+
+/** 流行菜单模型数组 */
+@property (nonatomic, strong) NSArray *popLists;
 
 @end
 
 @implementation WASHomePageController
 
 // 重用标识
-NSString * const WASListId = @"listItem";
+NSString * const WASPopListId = @"popList";
+NSString * const WASListItemId = @"listItem";
 
 #pragma mark - lazy
 - (AFHTTPSessionManager *)manager
@@ -50,9 +57,8 @@ NSString * const WASListId = @"listItem";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    //    NSLog(@"%@", NSHomeDirectory());
     [self loadHomeData];
-//    NSLog(@"%@", NSHomeDirectory());
     [self setupTableView];
 
     [self setupNav];
@@ -77,7 +83,10 @@ NSString * const WASListId = @"listItem";
     [self.manager GET:WASRequestURL parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         
         WSWriteToPlist(responseObject[@"content"], @"首页数据.plist");
-        weakSelf.listItems = [WASPopList objectArrayWithKeyValuesArray:responseObject[@"content"][@"pop_lists"][@"lists"]];
+        
+        weakSelf.listItems = [WASPopList objectArrayWithKeyValuesArray:responseObject[@"content"][@"pop_list"][@"lists"]];
+        weakSelf.popLists = [WASPopRecipeList objectArrayWithKeyValuesArray:responseObject[@"content"][@"pop_recipe_lists"][@"recipe_lists"]];
+        
         // 刷新表格
         [weakSelf.tableView reloadData];
         
@@ -88,17 +97,17 @@ NSString * const WASListId = @"listItem";
 
 - (void)setupTableView
 {
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WASListItemCell class]) bundle:nil] forCellReuseIdentifier:WASListId];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WASPopListCell class]) bundle:nil] forCellReuseIdentifier:WASListItemId];
     
-    self.tableView.rowHeight = 100;
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WASPopList class]) bundle:nil] forCellReuseIdentifier:WASPopListId];
     
+    self.tableView.rowHeight = 80;
     
 //    self.tableView.estimatedRowHeight = 100;
 //    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
-//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    self.tableView.backgroundColor = [UIColor clearColor];
-    [self.tableView reloadData];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    self.tableView.backgroundColor = WASCommonBgColor;
 }
 
 // 设置导航栏
@@ -121,27 +130,60 @@ NSString * const WASListId = @"listItem";
 
 #pragma mark - Table view data source
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return self.popLists.count;
+    }
+    else {
     return self.listItems.count;
+    }
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    WASListItemCell *cell = [tableView dequeueReusableCellWithIdentifier:WASListId];
-//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    if (indexPath.section == 0) {
+        WASPopListCell *cell = [tableView dequeueReusableCellWithIdentifier:WASListItemId];
+        
+        cell.listItem = self.listItems[indexPath.row];
+        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.backgroundColor = self.tableView.backgroundColor;
+    }
+    WASPopListCell *cell = [tableView dequeueReusableCellWithIdentifier:WASListItemId];
+    
     cell.listItem = self.listItems[indexPath.row];
     
-//    WASLog(@"%@", cell);
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.backgroundColor = WASCommonBgColor;
+    
     return cell;
+}
+
+// 设置组头视图
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//    return ;
+//}
+
+// 设置组标题
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return @"榜单";
 }
 
 
 #pragma mark - Table view delegate
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    NSLog(@"%s", __func__);
 }
 
 @end

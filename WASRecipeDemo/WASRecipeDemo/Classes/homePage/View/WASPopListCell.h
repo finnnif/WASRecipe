@@ -10,7 +10,7 @@
 
 @class WASPopList;
 
-@interface WASListItemCell : UITableViewCell
+@interface WASPopListCell : UITableViewCell
 
 /** 数据模型 */
 @property (nonatomic, strong) WASPopList *listItem;

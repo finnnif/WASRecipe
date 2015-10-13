@@ -84,7 +84,7 @@
 // 添加子控制器
 - (void)setupChildViewController
 {
-    [self loadChildContorller:[[WASHomePageController alloc] init] image:@"xiachufang" selImage:@"xiachufang_selected" title:@"下厨房"];
+    [self loadChildContorller:[[WASHomePageController alloc] initWithStyle:UITableViewStyleGrouped] image:@"xiachufang" selImage:@"xiachufang_selected" title:@"下厨房"];
     
     [self loadChildContorller:[[WASMakertController alloc] init] image:@"makert" selImage:@"makert_selected" title:@"市集"];
     
