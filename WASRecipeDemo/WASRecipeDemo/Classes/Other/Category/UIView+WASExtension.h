@@ -17,4 +17,6 @@
 @property (nonatomic, assign) CGFloat centerX;
 @property (nonatomic, assign) CGFloat centerY;
 
+// 从xib加载view
++ (instancetype)viewFromXib;
 @end

@@ -9,6 +9,7 @@
 #import "WASPopRecipeListCell.h"
 #import "WASPopRecipeList.h"
 #import "WASUer.h"
+#import <UIImageView+WebCache.h>
 
 @interface WASPopRecipeListCell ()
 
@@ -27,7 +28,17 @@
     
     self.nameLabel.text = popRecipeListItem.name;
     self.uerNameLabel.text = popRecipeListItem.author.name;
-    [self.iconView setupRectHeaderFromURL:popRecipeListItem.recipePic];
+    [self.iconView sd_setImageWithURL:[NSURL URLWithString: popRecipeListItem.recipePic] placeholderImage:[UIImage imageNamed:@"123"]];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    self.imageView.width = 60;
+    self.imageView.height = 75;
+    self.imageView.centerY = self.height * 0.5;
+    
 }
 
 @end

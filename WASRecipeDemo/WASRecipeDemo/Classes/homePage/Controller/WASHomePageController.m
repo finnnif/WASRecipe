@@ -16,6 +16,7 @@
 #import "WASPopRecipeList.h"
 #import "WASPopRecipeListCell.h"
 #import "WASPopListCell.h"
+#import "WASHomePageHeaderView.h"
 
 @interface WASHomePageController ()
 
@@ -44,23 +45,13 @@ NSString * const WASPopListId = @"popList";
     }
     return _manager;
 }
-
-//- (NSArray *)listItems
-//{
-//    if (!_listItems) {
-//        
-//        _listItems = [WASListItem objectArrayWithKeyValuesArray:[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"lists" ofType:@"plist"]]];
-//    }
-//    return _listItems;
-//}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     //    NSLog(@"%@", NSHomeDirectory());
     [self loadHomeData];
     [self setupTableView];
-
+    
     [self setupNav];
 
 }
@@ -87,7 +78,7 @@ NSString * const WASPopListId = @"popList";
         weakSelf.popLists = [WASPopList objectArrayWithKeyValuesArray:responseObject[@"content"][@"pop_lists"][@"lists"]];
         
         weakSelf.popRecipeLists = [WASPopRecipeList objectArrayWithKeyValuesArray:responseObject[@"content"][@"pop_recipe_lists"][@"recipe_lists"]];
-        
+
         // 刷新表格
         [weakSelf.tableView reloadData];
         
@@ -101,15 +92,18 @@ NSString * const WASPopListId = @"popList";
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WASPopRecipeListCell class]) bundle:nil] forCellReuseIdentifier:WASPopRecipeListId];
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WASPopListCell class]) bundle:nil] forCellReuseIdentifier:WASPopListId];
-    
-    
-    self.tableView.rowHeight = 80;
-    
+
 //    self.tableView.estimatedRowHeight = 100;
 //    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
+    // 设置左边的图片的url
+    WASHomePageHeaderView *headerView = [WASHomePageHeaderView viewFromXib];
+    self.tableView.tableHeaderView = headerView;
+    
+    
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = WASCommonBgColor;
+    self.tableView.sectionHeaderHeight = 100;
 }
 
 // 设置导航栏
@@ -131,7 +125,6 @@ NSString * const WASPopListId = @"popList";
 
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 2;
@@ -157,6 +150,8 @@ NSString * const WASPopListId = @"popList";
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = self.tableView.backgroundColor;
+        
+        tableView.rowHeight = 90;
         return cell;
     }
     else {
@@ -166,6 +161,7 @@ NSString * const WASPopListId = @"popList";
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = self.tableView.backgroundColor;
+        tableView.rowHeight = 75;
         return cell;
     }
 }
@@ -173,7 +169,22 @@ NSString * const WASPopListId = @"popList";
 // 设置组头视图
 //- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 //{
-//    return ;
+//    if (section == 0) {
+//        UILabel *label = [[UILabel alloc] init];
+//        label.font = [UIFont systemFontOfSize:14];
+//        label.textColor = WASTextGrayColor;
+//        label.backgroundColor = [UIColor blueColor];
+//        label.text = @"流行菜单";
+//        return label;
+//    }
+//    else {
+//        UILabel *label = [[UILabel alloc] init];
+//        label.font = [UIFont systemFontOfSize:20];
+//        label.textColor = WASTextGrayColor;
+//        label.backgroundColor = [UIColor blueColor];
+//        label.text = @"榜单";
+//        return label;
+//    }
 //}
 
 // 设置组标题
@@ -186,7 +197,6 @@ NSString * const WASPopListId = @"popList";
         return @"榜单";
     }
 }
-
 
 #pragma mark - Table view delegate
 

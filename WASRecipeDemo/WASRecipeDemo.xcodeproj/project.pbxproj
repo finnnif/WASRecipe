@@ -29,7 +29,9 @@
 		38A3B2C81BCC95940061430E /* WASPopRecipeListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A3B2C61BCC95940061430E /* WASPopRecipeListCell.m */; };
 		38A3B2C91BCC95940061430E /* WASPopRecipeListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A3B2C71BCC95940061430E /* WASPopRecipeListCell.xib */; };
 		38A3B2CC1BCCA64E0061430E /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A3B2CB1BCCA64E0061430E /* MJExtensionConfig.m */; };
-		38A3B2CF1BCCAB120061430E /* WASComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A3B2CE1BCCAB120061430E /* WASComment.m */; };
+		38AA56B01BD3D254005F3B97 /* WASHomePageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AA56AF1BD3D254005F3B97 /* WASHomePageHeaderView.m */; };
+		38AA56B21BD3D267005F3B97 /* WASHomePageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AA56B11BD3D267005F3B97 /* WASHomePageHeaderView.xib */; };
+		38AA56B51BD3E1E1005F3B97 /* WASHomePageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AA56B41BD3E1E1005F3B97 /* WASHomePageHeader.m */; };
 		38AEA23E1BC9F25B0025F05D /* WASLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AEA23D1BC9F25B0025F05D /* WASLoginController.xib */; };
 		38AEA2421BCA0FF30025F05D /* WASShoppingBasketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AEA2401BCA0FF30025F05D /* WASShoppingBasketController.m */; };
 		38AEA2431BCA0FF30025F05D /* WASShoppingBasketController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AEA2411BCA0FF30025F05D /* WASShoppingBasketController.xib */; };
@@ -43,7 +45,6 @@
 		38FC167D1BCB7B0C007E4629 /* WASPopList.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FC167C1BCB7B0C007E4629 /* WASPopList.m */; };
 		38FC16811BCB8E65007E4629 /* WASPopListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FC167F1BCB8E65007E4629 /* WASPopListCell.m */; };
 		38FC16821BCB8E65007E4629 /* WASPopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38FC16801BCB8E65007E4629 /* WASPopListCell.xib */; };
-		38FC16841BCB9708007E4629 /* lists.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38FC16831BCB9708007E4629 /* lists.plist */; };
 		44D16C58163CE54F70D7BE78 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8043D6E30CB86D6D3F10E6E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -101,8 +102,11 @@
 		38A3B2C71BCC95940061430E /* WASPopRecipeListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WASPopRecipeListCell.xib; sourceTree = "<group>"; };
 		38A3B2CA1BCCA64E0061430E /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
 		38A3B2CB1BCCA64E0061430E /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
-		38A3B2CD1BCCAB120061430E /* WASComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASComment.h; sourceTree = "<group>"; };
-		38A3B2CE1BCCAB120061430E /* WASComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASComment.m; sourceTree = "<group>"; };
+		38AA56AE1BD3D254005F3B97 /* WASHomePageHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASHomePageHeaderView.h; sourceTree = "<group>"; };
+		38AA56AF1BD3D254005F3B97 /* WASHomePageHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASHomePageHeaderView.m; sourceTree = "<group>"; };
+		38AA56B11BD3D267005F3B97 /* WASHomePageHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WASHomePageHeaderView.xib; sourceTree = "<group>"; };
+		38AA56B31BD3E1E1005F3B97 /* WASHomePageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASHomePageHeader.h; sourceTree = "<group>"; };
+		38AA56B41BD3E1E1005F3B97 /* WASHomePageHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASHomePageHeader.m; sourceTree = "<group>"; };
 		38AEA23D1BC9F25B0025F05D /* WASLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WASLoginController.xib; sourceTree = "<group>"; };
 		38AEA23F1BCA0FF30025F05D /* WASShoppingBasketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASShoppingBasketController.h; sourceTree = "<group>"; };
 		38AEA2401BCA0FF30025F05D /* WASShoppingBasketController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASShoppingBasketController.m; sourceTree = "<group>"; };
@@ -127,7 +131,6 @@
 		38FC167E1BCB8E65007E4629 /* WASPopListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASPopListCell.h; sourceTree = "<group>"; };
 		38FC167F1BCB8E65007E4629 /* WASPopListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASPopListCell.m; sourceTree = "<group>"; };
 		38FC16801BCB8E65007E4629 /* WASPopListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WASPopListCell.xib; sourceTree = "<group>"; };
-		38FC16831BCB9708007E4629 /* lists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lists.plist; sourceTree = "<group>"; };
 		B8043D6E30CB86D6D3F10E6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7787ACF97884C29B526C3F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -227,7 +230,6 @@
 			children = (
 				387668161BBCC5250033669C /* Images.xcassets */,
 				3876680A1BBCC5250033669C /* Info.plist */,
-				38FC16831BCB9708007E4629 /* lists.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -319,12 +321,12 @@
 		38DA053D1BBCE2EA00921325 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				38A3B2CD1BCCAB120061430E /* WASComment.h */,
-				38A3B2CE1BCCAB120061430E /* WASComment.m */,
 				38FC167B1BCB7B0C007E4629 /* WASPopList.h */,
 				38FC167C1BCB7B0C007E4629 /* WASPopList.m */,
 				38057C3D1BCBD7ED001A8784 /* WASPopRecipeList.h */,
 				38057C3E1BCBD7ED001A8784 /* WASPopRecipeList.m */,
+				38AA56B31BD3E1E1005F3B97 /* WASHomePageHeader.h */,
+				38AA56B41BD3E1E1005F3B97 /* WASHomePageHeader.m */,
 				38057C3A1BCBD729001A8784 /* WASUer.h */,
 				38057C3B1BCBD729001A8784 /* WASUer.m */,
 			);
@@ -340,6 +342,9 @@
 				38A3B2C51BCC95940061430E /* WASPopRecipeListCell.h */,
 				38A3B2C61BCC95940061430E /* WASPopRecipeListCell.m */,
 				38A3B2C71BCC95940061430E /* WASPopRecipeListCell.xib */,
+				38AA56AE1BD3D254005F3B97 /* WASHomePageHeaderView.h */,
+				38AA56AF1BD3D254005F3B97 /* WASHomePageHeaderView.m */,
+				38AA56B11BD3D267005F3B97 /* WASHomePageHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -550,8 +555,8 @@
 				38AEA2431BCA0FF30025F05D /* WASShoppingBasketController.xib in Resources */,
 				387668171BBCC5250033669C /* Images.xcassets in Resources */,
 				38FC16821BCB8E65007E4629 /* WASPopListCell.xib in Resources */,
-				38FC16841BCB9708007E4629 /* lists.plist in Resources */,
 				38AEA23E1BC9F25B0025F05D /* WASLoginController.xib in Resources */,
+				38AA56B21BD3D267005F3B97 /* WASHomePageHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +610,7 @@
 				389FF8341BC8A0CF00F77DB2 /* WASSelfController.m in Sources */,
 				38FC16811BCB8E65007E4629 /* WASPopListCell.m in Sources */,
 				3876680F1BBCC5250033669C /* AppDelegate.m in Sources */,
+				38AA56B51BD3E1E1005F3B97 /* WASHomePageHeader.m in Sources */,
 				38AEA2421BCA0FF30025F05D /* WASShoppingBasketController.m in Sources */,
 				38057C3F1BCBD7ED001A8784 /* WASPopRecipeList.m in Sources */,
 				38DA054D1BBCE57200921325 /* WASTabBar.m in Sources */,
@@ -621,13 +627,13 @@
 				389FF83F1BC8A37F00F77DB2 /* WASConst.m in Sources */,
 				38DA05531BBCE68000921325 /* UIButton+WASExtension.m in Sources */,
 				38057C3C1BCBD729001A8784 /* WASUer.m in Sources */,
+				38AA56B01BD3D254005F3B97 /* WASHomePageHeaderView.m in Sources */,
 				389FF8381BC8A15400F77DB2 /* WASLoginRegisterController.m in Sources */,
 				38DA054A1BBCE42000921325 /* WASTabBarController.m in Sources */,
 				384EB00D1BC79BC2006E537A /* WASMakertController.m in Sources */,
 				384EB00A1BC7757A006E537A /* WASHomePageController.m in Sources */,
 				38A3B2CC1BCCA64E0061430E /* MJExtensionConfig.m in Sources */,
 				389FF83C1BC8A2FC00F77DB2 /* WSConst.m in Sources */,
-				38A3B2CF1BCCAB120061430E /* WASComment.m in Sources */,
 				38F512601BC7D9C300D02B37 /* UIBarButtonItem+WASExtension.m in Sources */,
 				38EF2DC31BC6851800A67848 /* WASTabBarButton.m in Sources */,
 			);

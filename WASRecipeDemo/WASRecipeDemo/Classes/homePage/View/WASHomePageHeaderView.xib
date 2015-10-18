@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WASHomePageHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="407" height="284"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NiR-Yt-e2l" userLabel="contentView">
+                    <rect key="frame" x="0.0" y="0.0" width="407" height="284"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="搜索菜谱,食材" translatesAutoresizingMaskIntoConstraints="NO" id="YyZ-7c-IEM" userLabel="搜索条">
+                            <rect key="frame" x="0.0" y="0.0" width="407" height="44"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QC2-Fv-ArK" userLabel="leftView">
+                            <rect key="frame" x="0.0" y="44" width="204" height="136"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MuH-wt-kbG">
+                                    <rect key="frame" x="10" y="5" width="189" height="126"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="QC2-Fv-ArK" secondAttribute="height" multiplier="3:2" id="3i9-kz-9IK"/>
+                                <constraint firstItem="MuH-wt-kbG" firstAttribute="leading" secondItem="QC2-Fv-ArK" secondAttribute="leading" constant="10" id="Jef-nv-pbn"/>
+                                <constraint firstAttribute="trailing" secondItem="MuH-wt-kbG" secondAttribute="trailing" constant="5" id="Ubm-w6-J5V"/>
+                                <constraint firstAttribute="bottom" secondItem="MuH-wt-kbG" secondAttribute="bottom" constant="5" id="fA1-9m-0T4"/>
+                                <constraint firstItem="MuH-wt-kbG" firstAttribute="top" secondItem="QC2-Fv-ArK" secondAttribute="top" constant="5" id="wQQ-9Z-fMl"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eg2-Ie-cns" userLabel="rightView">
+                            <rect key="frame" x="204" y="44" width="203" height="136"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_firends_background" translatesAutoresizingMaskIntoConstraints="NO" id="7AM-VH-sXA">
+                                    <rect key="frame" x="5" y="5" width="188" height="126"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="看看大家的作品吧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdD-TL-SeH">
+                                    <rect key="frame" x="49" y="60" width="104" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L96-Nf-HZb">
+                                    <rect key="frame" x="84" y="34" width="34" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="7AM-VH-sXA" secondAttribute="bottom" constant="5" id="B1i-6v-3uS"/>
+                                <constraint firstItem="7AM-VH-sXA" firstAttribute="top" secondItem="Eg2-Ie-cns" secondAttribute="top" constant="5" id="H3k-ur-MEz"/>
+                                <constraint firstItem="7AM-VH-sXA" firstAttribute="leading" secondItem="Eg2-Ie-cns" secondAttribute="leading" constant="5" id="S4X-Qn-jaf"/>
+                                <constraint firstAttribute="trailing" secondItem="7AM-VH-sXA" secondAttribute="trailing" constant="10" id="ZXP-1Q-8LI"/>
+                                <constraint firstAttribute="centerX" secondItem="JdD-TL-SeH" secondAttribute="centerX" id="Zr1-Lh-1q1"/>
+                                <constraint firstAttribute="centerX" secondItem="L96-Nf-HZb" secondAttribute="centerX" id="gGA-yq-kTb"/>
+                                <constraint firstAttribute="centerY" secondItem="JdD-TL-SeH" secondAttribute="centerY" id="pcz-F9-2al"/>
+                                <constraint firstItem="JdD-TL-SeH" firstAttribute="top" secondItem="L96-Nf-HZb" secondAttribute="bottom" constant="5" id="za8-XV-aw0"/>
+                            </constraints>
+                        </view>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeZ-G1-bVb">
+                            <rect key="frame" x="8" y="190" width="391" height="94"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="OeZ-G1-bVb" secondAttribute="bottom" id="G4B-Tb-BdU"/>
+                        <constraint firstItem="Eg2-Ie-cns" firstAttribute="leading" secondItem="QC2-Fv-ArK" secondAttribute="trailing" id="Jmf-TR-PRJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Eg2-Ie-cns" secondAttribute="trailing" id="PIt-ga-qId"/>
+                        <constraint firstItem="OeZ-G1-bVb" firstAttribute="leading" secondItem="NiR-Yt-e2l" secondAttribute="leading" constant="8" id="TSf-Px-Z9X"/>
+                        <constraint firstItem="OeZ-G1-bVb" firstAttribute="top" secondItem="Eg2-Ie-cns" secondAttribute="bottom" constant="10" id="Txc-P8-OQP"/>
+                        <constraint firstAttribute="trailing" secondItem="YyZ-7c-IEM" secondAttribute="trailing" id="UE6-l2-Mau"/>
+                        <constraint firstItem="Eg2-Ie-cns" firstAttribute="width" secondItem="QC2-Fv-ArK" secondAttribute="width" id="XLh-XA-JJ9"/>
+                        <constraint firstItem="QC2-Fv-ArK" firstAttribute="leading" secondItem="NiR-Yt-e2l" secondAttribute="leading" id="aP9-33-tTF"/>
+                        <constraint firstItem="Eg2-Ie-cns" firstAttribute="top" secondItem="QC2-Fv-ArK" secondAttribute="top" id="arC-0e-fX2"/>
+                        <constraint firstItem="Eg2-Ie-cns" firstAttribute="height" secondItem="QC2-Fv-ArK" secondAttribute="height" id="d7n-kJ-L4q"/>
+                        <constraint firstItem="YyZ-7c-IEM" firstAttribute="leading" secondItem="NiR-Yt-e2l" secondAttribute="leading" id="emG-w6-SGk"/>
+                        <constraint firstItem="QC2-Fv-ArK" firstAttribute="top" secondItem="YyZ-7c-IEM" secondAttribute="bottom" id="fKS-Pe-Ycm"/>
+                        <constraint firstItem="YyZ-7c-IEM" firstAttribute="top" secondItem="NiR-Yt-e2l" secondAttribute="top" id="jAl-lp-M3h"/>
+                        <constraint firstAttribute="trailing" secondItem="OeZ-G1-bVb" secondAttribute="trailing" constant="8" id="tjo-CT-rJU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="NiR-Yt-e2l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4LL-vG-wDO"/>
+                <constraint firstAttribute="bottom" secondItem="NiR-Yt-e2l" secondAttribute="bottom" id="qUa-wR-ptO"/>
+                <constraint firstAttribute="trailing" secondItem="NiR-Yt-e2l" secondAttribute="trailing" id="qtV-0X-gkd"/>
+                <constraint firstItem="NiR-Yt-e2l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zJD-DI-6kS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftImageView" destination="MuH-wt-kbG" id="Lxh-6S-z6P"/>
+            </connections>
+            <point key="canvasLocation" x="194.5" y="358"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_firends_background" width="153" height="100"/>
+    </resources>
+</document>

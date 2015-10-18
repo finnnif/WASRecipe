@@ -10,6 +10,11 @@
 
 @implementation UIView (WASExtension)
 
++ (instancetype)viewFromXib
+{
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+}
+
 - (void)setX:(CGFloat)x
 {
     CGRect frame = self.frame;
