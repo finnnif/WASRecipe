@@ -27,7 +27,7 @@
     _popRecipeListItem = popRecipeListItem;
     
     self.nameLabel.text = popRecipeListItem.name;
-    self.uerNameLabel.text = popRecipeListItem.author.name;
+    self.uerNameLabel.text = [@"来自:" stringByAppendingString:popRecipeListItem.author.name];
     [self.iconView sd_setImageWithURL:[NSURL URLWithString: popRecipeListItem.recipePic] placeholderImage:[UIImage imageNamed:@"123"]];
 }
 

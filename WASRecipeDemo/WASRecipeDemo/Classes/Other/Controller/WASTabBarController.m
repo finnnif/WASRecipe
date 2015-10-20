@@ -63,6 +63,8 @@
 // 设置tabBar
 - (void)setupTabBar
 {
+    // 去除tabBar顶部的阴影线
+    [self.tabBar setClipsToBounds:YES];
     // 添加自定义的tabBar
     WASTabBar *tabBar = [[WASTabBar alloc] init];
     
@@ -76,7 +78,6 @@
     //    tabBar.count = (int)self.childViewControllers.count;
     // 传对应的子控制器tabBarItem数组
     tabBar.items = self.items;
-    
     
     [self.tabBar addSubview:tabBar];
 }

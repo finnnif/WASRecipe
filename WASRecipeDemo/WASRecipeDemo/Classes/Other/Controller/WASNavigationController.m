@@ -21,8 +21,10 @@
     UINavigationBar *bar = [UINavigationBar appearance];
     
     // 设置背景
-    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 //    [bar setBackgroundColor:[UIColor whiteColor]];
+    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+
+    [bar setShadowImage:[[UIImage alloc] init]];
     
     // 设置标题文字
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
@@ -84,6 +86,7 @@
 - (void)back
 {
     [self popViewControllerAnimated:YES];
+    
 }
 
 #pragma mark - UIGestureRecognizerDelegate

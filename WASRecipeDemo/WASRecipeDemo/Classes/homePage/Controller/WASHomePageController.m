@@ -109,7 +109,7 @@ NSString * const WASPopListId = @"popList";
 // 设置导航栏
 - (void)setupNav
 {
-    // 设置左边的item
+    // 设置右边的item
     UIBarButtonItem *buyListItem = [UIBarButtonItem itemWithImage:@"buy_list_button" highImage:nil target:self action:@selector(buyListItemOnCilck)];
     self.navigationItem.rightBarButtonItem = buyListItem;
 
