@@ -1,0 +1,114 @@
+<VAST version="3.0"> 
+	<Ad id="bd64266b-0157-1000-d128-3ec269710093"> 
+		<InLine> 
+			<AdSystem>InMobi</AdSystem> 
+			<AdTitle>Phyton Ltd.</AdTitle> 
+			<Error>
+				<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=99&amp;action=vast-error&amp;label=[ERRORCODE]]]>
+			</Error> 
+			<Impression>
+				<![CDATA[https://impression.appsflyer.com/id738480930?pid=inmobi_int&amp;c=COEM_082016_iPhone_CN_CPI&amp;click_id=bd64266b-0157-1000-d128-3ec269710093&amp;idfa=C23B4F8C-4BDF-4899-9A52-B36C632927CB&amp;af_siteid=DVQLKJF4&amp;af_cost_value=2.5]]>
+			</Impression> 
+			<Impression>
+				<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=18&amp;ts=$TS]]>
+			</Impression> 
+			<Creatives> 
+				<Creative id="1"> 
+					<Linear> 
+						<Duration>00:00:30</Duration> 
+						<TrackingEvents> 
+							<Tracking event="creativeView">
+								<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=1]]>
+							</Tracking> 
+							<Tracking event="start">
+								<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=10&amp;mid=video&amp;mt=1]]>
+							</Tracking> 
+							<Tracking event="firstQuartile">
+								<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=12&amp;q=1&amp;mid=video&amp;mt=1]]>
+							</Tracking> 
+							<Tracking event="midpoint">
+								<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=12&amp;q=2&amp;mid=video&amp;mt=1]]>
+							</Tracking> 
+							<Tracking event="thirdQuartile">
+								<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=12&amp;q=3&amp;mid=video&amp;mt=1]]>
+							</Tracking> 
+							<Tracking event="complete">
+								<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=13&amp;mid=video&amp;mt=1]]>
+							</Tracking> 
+							<Tracking event="pause">
+								<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=14&amp;mid=video&amp;mt=1]]>
+							</Tracking> 
+							<Tracking event="resume">
+								<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=17&amp;mid=video&amp;mt=1]]>
+							</Tracking> 
+						</TrackingEvents> 
+						<VideoClicks> 
+							<ClickThrough>
+								<![CDATA[https://app.appsflyer.com/id738480930?pid=inmobi_int&amp;c=COEM_082016_iPhone_CN_CPI&amp;click_id=bd64266b-0157-1000-d128-3ec269710093&amp;idfa=C23B4F8C-4BDF-4899-9A52-B36C632927CB&amp;af_siteid=DVQLKJF4&amp;af_cost_value=2.5]]>
+							</ClickThrough> 
+							<ClickTracking>
+								<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=8&amp;ts=$TS]]>
+							</ClickTracking> 
+							<ClickTracking>
+								<![CDATA[http://c.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/1/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/7a1b5c25?at=1&amp;am=0&amp;ct=$TS]]>
+							</ClickTracking> 
+						</VideoClicks> 
+						<MediaFiles> 
+							<MediaFile delivery="progressive" type="video/mp4" bitrate="1216" width="1280" height="720" scalable="false" maintainAspectRatio="true">
+								<![CDATA[http://i.l.inmobicdn.net/adtools/videoads/prod/4028cb1e373610210137a32f64681765/videos/eaf8d67d-42fa-4ed9-a7df-8e0d06f39674/video.720p.mp4]]> 
+							</MediaFile> 
+							<MediaFile delivery="progressive" type="video/mp4" bitrate="1210" width="640" height="360" scalable="false" maintainAspectRatio="true">
+								<![CDATA[http://i.l.inmobicdn.net/adtools/videoads/prod/4028cb1e373610210137a32f64681765/videos/eaf8d67d-42fa-4ed9-a7df-8e0d06f39674/video.360p.mp4]]> 
+							</MediaFile> 
+							<MediaFile delivery="progressive" type="video/mp4" bitrate="1230" width="854" height="480" scalable="false" maintainAspectRatio="true">
+								<![CDATA[http://i.l.inmobicdn.net/adtools/videoads/prod/4028cb1e373610210137a32f64681765/videos/eaf8d67d-42fa-4ed9-a7df-8e0d06f39674/video.480p.mp4]]> 
+							</MediaFile> 
+						</MediaFiles> 
+					</Linear> 
+				</Creative> 
+				<Creative id="2"> 
+					<CompanionAds> 
+						<Companion id="endCard" width="1024" height="768"> 
+							<StaticResource creativeType="image/jpeg">
+								<![CDATA[http://i.l.inmobicdn.net/banners/FileData/b7d7833b-3271-41da-b784-b19bbcbd7771.jpeg]]> 
+							</StaticResource> 
+							<TrackingEvents> 
+								<Tracking event="creativeView">
+									<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=99&amp;action=companion-view]]>
+								</Tracking> 
+							</TrackingEvents> 
+							<CompanionClickTracking>
+								<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=8&amp;ts=$TS]]>
+							</CompanionClickTracking> 
+							<CompanionClickTracking>
+								<![CDATA[http://c.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/1/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/7a1b5c25?at=1&amp;am=0&amp;ct=$TS]]>
+							</CompanionClickTracking> 
+							<CompanionClickThrough>
+								<![CDATA[https://app.appsflyer.com/id738480930?pid=inmobi_int&amp;c=COEM_082016_iPhone_CN_CPI&amp;click_id=bd64266b-0157-1000-d128-3ec269710093&amp;idfa=C23B4F8C-4BDF-4899-9A52-B36C632927CB&amp;af_siteid=DVQLKJF4&amp;af_cost_value=2.5]]>
+							</CompanionClickThrough> 
+						</Companion> 
+						<Companion width="768" height="1024"> 
+							<StaticResource creativeType="image/jpeg">
+								<![CDATA[http://i.l.inmobicdn.net/banners/FileData/8d6ae746-c6d8-409c-bfe1-b3fce9979717.jpeg]]> 
+							</StaticResource> 
+							<TrackingEvents> 
+								<Tracking event="creativeView">
+									<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=99&amp;action=companion-view]]>
+								</Tracking> 
+							</TrackingEvents> 
+							<CompanionClickTracking>
+								<![CDATA[http://et.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/0/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/bf8ccba8?m=8&amp;ts=$TS]]>
+							</CompanionClickTracking> 
+							<CompanionClickTracking>
+								<![CDATA[http://c.w.inmobi.com/c.asm/C/b/ei24rn5578/1hgp/t/4k/lx/u/0/0/0/eyJVSUQiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IiLCJJREEiOiJDMjNCNEY4Qy00QkRGLTQ4OTktOUE1Mi1CMzZDNjMyOTI3Q0IifQ~~/bd64266b-0157-1000-d128-3ec269710093/-1/0/-1/1/0/x/13592549/NW/2t/0/apivast/3.0.0/dir/eA~~/FsC4AhYAFsq9yvnTVVcAAAAAAADwPzQAEhg4TGhxcjZ5MU9YMG0wVkh5dzdpNDhYSURFVm5FcWQwcVltL3IydEYzaU96elo4YnNPOEZRZDV3PT0YBFZBU1QcFAAUAhwcFv-_x-qf5eybhQEW2ZHE7dDP4O9cABbg6smuwMjX6O8BFQASAAA5Few-IhQAFriilfXUURQCGBlwZXJmLWFkcG9vbDEwMDQucGVyZi5oa2cxFAgSPBUAACwVAABTBAA=/-1/AA==/7/7a1b5c25?at=1&amp;am=0&amp;ct=$TS]]>
+							</CompanionClickTracking> 
+							<CompanionClickThrough>
+								<![CDATA[https://app.appsflyer.com/id738480930?pid=inmobi_int&amp;c=COEM_082016_iPhone_CN_CPI&amp;click_id=bd64266b-0157-1000-d128-3ec269710093&amp;idfa=C23B4F8C-4BDF-4899-9A52-B36C632927CB&amp;af_siteid=DVQLKJF4&amp;af_cost_value=2.5]]>
+							</CompanionClickThrough> 
+						</Companion> 
+					</CompanionAds> 
+				</Creative> 
+			</Creatives> 
+		</InLine> 
+	</Ad> 
+</VAST>
